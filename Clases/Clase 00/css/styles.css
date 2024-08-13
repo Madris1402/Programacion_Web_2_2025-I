@@ -1,0 +1,13 @@
+body{
+
+    background-color: rgb(33, 44, 70);
+
+}
+h1, ul, li{
+    color: white;
+}
+p{
+    color: white;
+    font: italic;
+    font-size: 1em;
+}
