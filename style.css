@@ -5,7 +5,10 @@ body {
 }
 
 table{
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(71, 71, 71);
+}
+td, th{
+    padding: 10px;
 }
 a {
     color:rgb(185, 105, 255);
