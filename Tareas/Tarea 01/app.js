@@ -8,7 +8,7 @@ let estatura = prompt("Ingrea tu estatura en Metros");
 let IMC = parseInt(peso) / (parseInt(estatura)^2)
 
 console.log("Hola "+ nombre+ " tu IMC es: "+ IMC)
-
+alert("Hola "+ nombre+ " tu IMC es: "+ IMC)
 
 // IMC Nivel de peso
 // Por debajo de 18.5	Bajo peso
