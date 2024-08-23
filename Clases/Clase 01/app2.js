@@ -1,3 +1,5 @@
+function App1(){
+
 // Variables
 let num1 = 2;
 let num2 = 4;
@@ -9,3 +11,4 @@ let nombre = "Ricardo";
 let apellido = "Madrigal";
 
 console.log(nombre + " " + apellido);
+}
