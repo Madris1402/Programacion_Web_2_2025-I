@@ -2,6 +2,7 @@ body{
     color: white;
     background-color: rgb(17, 10, 69);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 1em;
 }
 h1, ul, li{
     color: white;
