@@ -13,6 +13,9 @@ function App1(){
 }
 
 function App2(){
+
+    // Operaciones Booleanas
+    
     let valor1 = prompt("ingresa un valor binario");
     let valor2 = prompt("ingresa un valor binario");
 

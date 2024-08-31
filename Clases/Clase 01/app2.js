@@ -1,4 +1,4 @@
-function App1(){
+function App2(){
 
 // Variables
 let num1 = 2;

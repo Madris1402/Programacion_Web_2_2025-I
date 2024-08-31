@@ -1,4 +1,4 @@
-function App2(){
+function App3(){
 //Almacenar Variables según un Input
 
 // Nombre, Apellido, Nacionalidad
@@ -15,16 +15,6 @@ console.log("tu nacionalidad es: " + naci);
 let numro1 = prompt("Ingresa tu primer número: ");
 let numro2 = prompt("Ingresa tu segundo número: ");
 let salida = numro1 + numro2;
-
-console.log(typeof salida)
-console.log("el resultado es: " + salida);
-}
-
-function App3(){
-// Con Parsing
-let numro1 = prompt("Ingresa tu primer número: ");
-let numro2 = prompt("Ingresa tu segundo número: ");
-let salida = parseInt(numro1) + parseInt(numro2);
 
 console.log(typeof salida)
 console.log("el resultado es: " + salida);
