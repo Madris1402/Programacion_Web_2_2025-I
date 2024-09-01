@@ -19,9 +19,7 @@ function App(){
         }
         parseInt(guess)
         solonumeros();
-        intentos --;
-        console.log("vidas restantes: " + intentos);
-        contador ++;
+        iteration();
         aprox();
     } 
     winloose();
@@ -40,8 +38,8 @@ function credenciales(){
         console.log("Gracias por Jugar :3");
         return; 
     } else{
-        alert("Gracias por Jugar " + usuario + ":3");
-        console.log("Gracias por Jugar " + usuario + ":3");
+        alert("Gracias por Jugar " + usuario + " :3");
+        console.log("Gracias por Jugar " + usuario + " :3");
     }
 }
 
@@ -80,4 +78,17 @@ function solonumeros(){
         } else{
             console.log("número del usuario: " + guess);
         }
+}
+
+function iteration(){
+
+    if (guess != respuesta){
+    intentos --;
+    console.log("vidas restantes: " + intentos);
+    contador ++;
+    } else {
+        contador ++;
+        return;
+    }
+    
 }
