@@ -1,3 +1,4 @@
+//Iniciar un arreglo para administrar tareas.
 let tareas = [];
 
 function menu(){
@@ -9,8 +10,7 @@ function menu(){
         3. Marcar Tarea comocompletada
         4. Salir
 
-        Elige una opción:
-        `));
+        Elige una opción:`));
 }
 
 // función para manejar el flujo del programa
@@ -50,6 +50,7 @@ function agregartarea(){
             nombre:nombre,
             completada:false
         };
+        tareas.push(tarea);
         alert("Tarea agregada correctamente.");
 
     }else{
@@ -69,5 +70,17 @@ function vertarea(){
             mensaje += `${index+1}. ${tarea.nombre} [${tarea.completada ? "Completada":"Pendiente"}] \n `
         });
         alert(mensaje);        
+    }
+}
+
+// Cambiar estado de las tareas
+
+function marcartareacompletada(){
+    let numero = parseInt(prompt("Introduce el número de la tarea a completar: "));
+    if(numero > 0 && numero <= tareas.length){
+        tareas[numero-1].completada = true;
+        alert(`La tarea "${tareas[numero-1].nombre}" ha sido marcada como completada.`);
+    }else{
+        alert("Número de tarea no válido.");
     }
 }
