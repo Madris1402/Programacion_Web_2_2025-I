@@ -37,3 +37,13 @@ td, th, tr{
 div{
     padding: 10px;
 }
+
+input{
+    margin: 5px ;
+    padding: 4px;
+    border-radius: 6px;
+    border-color: rgb(125, 138, 255);
+    background-color: rgb(17, 10, 69);
+    color: white;
+
+}
