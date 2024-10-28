@@ -62,3 +62,30 @@ select{
     transition-duration: 0.4s;
     cursor: pointer;
 }
+
+.calculadora{
+    width: 300px;
+    margin: 50px auto;
+    border: 4px solid #aa00ff;
+    border-radius: 8px;
+    background-color: #b27fff;
+}
+
+.calcbutton{
+    background-color: #58299d;
+    border: 2px solid #aa00ff;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.calcscreen{
+    background-color: #57299d77;
+    border: 2px solid #aa00ff;
+    width: 280px;
+    height: 35px;
+    font-size: 25px;
+}
