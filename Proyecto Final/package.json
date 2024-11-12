@@ -1,16 +1,18 @@
 {
-  "name": "proyectofinal",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "mysql2": "^3.11.4"
+  },
+  "name": "proyecto-final",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Aaron Velasco",
+  "author": "",
   "license": "ISC",
-  "description": "Proyecto final de WEB2 uso de tecnologias de express, mysql2",
-  "dependencies": {
-    "express": "^4.21.1",
-    "mysql2": "^3.11.4"
-  }
+  "description": ""
 }

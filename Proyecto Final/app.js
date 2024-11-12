@@ -8,7 +8,7 @@ const app = express();
 /* Puerto */
 const port = 3008;
 
-app.use(bodyParser.urlencoded({extend:false})); /* analizar los datos del cuerpo de las solicitudes HTTP,
+app.use(bodyParser.urlencoded({extended: false})); /* analizar los datos del cuerpo de las solicitudes HTTP,
     especificamente los datos que provienen de formulario HTML enviados atraves de propiedad POST y GET*/
 
 app.set('view engine', 'ejs'); // Es un motor de plantillas //Permite generar cambios en HTML de manera dinámica
@@ -47,7 +47,7 @@ app.listen(port,()=>{
 
 app.get('/', (req, res) => {
     //Consulta a la base de datos
-    const query = 'select * from user';
+    const query = 'select * from users';
     //Trabajar con la conexion
     db.query(query, (err, results) => {
         if(err){
@@ -68,10 +68,46 @@ app.post('/add', (req, res) => {
     const query = 'insert into users (nombre, email) value (?,?)';
     db.query(query,[nombre, email], (err) => {
         if(err){
-            console.error(`Error al insertar datos en la tabla de usuarios. Codigo de error: ${err}}`);
+            console.error(`Error al insertar datos en la tabla de usuarios. Codigo de error: ${err}`);
             res.send(`Error al insertar datos en la tabla de usuarios.`)
         } else{
             res.redirect('/');
         }
+    });
+});
+
+//Editar Usuarios
+
+app.get('/edit/:id', (req, res) => {
+
+    const {id} = req.params;
+    const query = 'select * from users where id = ?';
+    db.query(query, [id], (err,results) => {
+
+        if(err){
+            console.error('Error e la BD');
+            res.send("Error en la BD")
+        } else{
+
+            res.render('edit', {user:results[0]});
+        }
+    });
+});
+
+//Eliminar Usuario
+
+app.get('/delete/:id', (req, res) => {
+
+    const {id} = req.params;
+    const query = 'delete from users where id = ?';
+    db.query(query,[id], (err) => {
+
+        if(err){
+            console.error('Error al Eliminar');
+            res.send("Error al Eliminar");
+        } else {
+            res.redirect('/');
+        }
+
     });
 });
