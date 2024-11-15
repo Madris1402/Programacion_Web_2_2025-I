@@ -18,26 +18,11 @@ app.use(bodyParser.urlencoded({extended: false})); /* analizar los datos del cue
 
 app.set('view engine', 'ejs'); // Es un motor de plantillas //Permite generar cambios en HTML de manera dinámica
 
-
-/* Crear Base de datos y Perfil de SQL
-create database if not exists node_crud;
-use node_crud;
-create table if not exists users(
-	id int auto_increment not null,
-    name varchar(70) not null,
-    email varchar(100) not null,
-    primary key (id)
-);
-
-create user 'progweb2'@'localhost' identified by '123456';
-grant all privileges on node_crud.* to 'progweb2'@'localhost';
-*/
-
 const db = mysql.createConnection({
     host: 'localhost',
-    user: 'progweb2',
+    user: 'progweb2_rmu',
     password: '123456',
-    database: 'node_crud',
+    database: 'node_crud_rmu',
     port: '3306'
 });
 

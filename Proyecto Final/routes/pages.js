@@ -12,7 +12,7 @@ router.get('/agregar', (req, res) =>{
 });
 
 router.get('/estilos', (req, res) =>{
-    res.sendFile(path.join(__dirname,'../estilos','/styles.css'))
+    res.sendFile(path.join(__dirname,'../views','/styles.css'))
 });
 
 module.exports=router;

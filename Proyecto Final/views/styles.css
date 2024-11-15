@@ -1,0 +1,157 @@
+body, button, input, table, tr, th, td, form {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #292929;
+    color: #FFFF;
+}
+.titulo{
+    font-weight: bold;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.titulo h1{
+    font-style: italic;
+    font-size: 30px;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+
+.agregar{
+    background-color: #7ddfc9;
+    border: #1c6155 solid 2px;
+    border-radius: 15px;
+    width: 200px;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+.agregar:hover{
+    background-color: #274c4e;
+    border: #274c4e solid 2px;
+    border-radius: 15px;
+    width: 200px;
+    padding: 5px;
+    font-weight: bolder;
+    color: #FFFF;
+}
+
+.editar{
+    background-color: #a2c3ee;
+    border: #294eb3 solid 2px;
+    border-radius: 15px;
+    width: 100px;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+.editar:hover{
+    background-color: #265ca1;
+    border: #265ca1 solid 2px;
+    border-radius: 15px;
+    width: 100px;
+    padding: 5px;
+    font-weight: bolder;
+    color: #FFFF;
+}
+
+.eliminar{
+    background-color: #d48b8b;
+    border: #7a2a2a solid 2px;
+    border-radius: 15px;
+    width: 100px;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+.eliminar:hover{
+    background-color: #7a2a2a;
+    border: #7a2a2a solid 2px;
+    border-radius: 15px;
+    width: 100px;
+    padding: 5px;
+    font-weight: bolder;
+    color: #FFFF;
+}
+
+
+.borde{
+    border: solid;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+th {
+    width: 250px;
+}
+
+td{
+    padding: 3px;
+}
+.centrartexto{
+    text-align: center;
+}
+
+.head{
+    background-color: #7084da;
+    text-align: center;
+    border: #7084da 1px solid;
+    border-radius: 6px;
+}
+.body{
+    outline: 1px;
+    padding: 3px;
+    text-align: center;
+    background-color: #3b477e;
+    border: #3b477e 1px solid;
+    border-radius: 6px;
+
+}
+.acciones{
+    background-color: #292929;
+    text-align: center;
+}
+
+
+.inputagergar{
+    padding: 3px;
+    border: #1c6155 solid 3px;
+    border-radius: 6px;
+}
+
+.formagregar{
+    width: 450px;
+    height: auto;
+    padding: 12px;
+    color: black;
+    font-weight: bolder;
+    background-color: #7ddfc9;
+    border: #1c6155 solid;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+.inputeditar{
+    padding: 3px;
+    border: #265ca1 solid 3px;
+    border-radius: 6px;
+}
+
+.formeditar{
+    width: 450px;
+    height: auto;
+    padding: 12px;
+    color: black;
+    font-weight: bolder;
+    background-color: #a2c3ee;
+    border: #265ca1 solid;
+    padding: 8px;
+    border-radius: 15px;
+}

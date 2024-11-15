@@ -7,28 +7,48 @@
     <title>Proyecto Final</title>
 </head>
 <body>
-    
-    <h1>Listar usuarios</h1>
-    <table>
-        <tr>
-            <th>ID</th>
-            <th>Nombre</th>
-            <th>Email</th>
-            <th>Acciones</th>
-        </tr>
-        <!-- JS -->
-         <% users.forEach(user =>{  %>
-        <tr>
-            <td><%=user.id %></td>
-            <td><%=user.name %></td>
-            <td><%=user.email %></td>
-            <td>
-                <a href="/edit/<%= user.id %>">Editar</a>|
-                <a href="/delete/<%= user.id %>">Eliminar</a>
-            </td>
-        </tr>
-        <% }); %>
-    </table>
-    <a href="/agregar">Agregar Usuario</a>
+    <div class="centrar">
+        <div class="titulo">
+            <h1>Proyecto Final de Programación Web 2</h1>
+            <h3>Madrigal Urencio Ricardo - 1710</h3>
+        </div>
+    </div>
+    <br>
+    <div class="centrar">
+        <div>
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <h1>Lista de Usuarios Registrados</h1> 
+                        </td>
+                        <td style="width: 35%;"></td>
+                        <td>
+                            <a href="/agregar"><button class="agregar">Agregar Usuario</button></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <table class="borde">
+                <tr>
+                    <th class="head"> ID </th> 
+                    <th class="head"> Nombre </th>
+                    <th class="head"> Email </th>
+                    <th> Acciones </th>
+                </tr>
+                <!-- JS -->
+                <% users.forEach(user =>{  %>
+                <tr>
+                    <td class="body"><%=user.id %></td>
+                    <td class="body"><%=user.name %></td>
+                    <td class="body"><%=user.email %></td>
+                    <td class="acciones">
+                        <a href="/edit/<%= user.id %>"><button class="editar">Editar</button></a> |
+                        <a href="/delete/<%= user.id %>"><button class="eliminar">Eliminar</button></a>
+                    </td>
+                </tr>
+                <% }); %>
+        </div>
+    </div>
 </body>
 </html>
